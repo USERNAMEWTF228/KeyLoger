@@ -37,9 +37,10 @@ int main() {
     ShowWindow(GetConsoleWindow(), SW_HIDE);
     const wchar_t* targetProcess = L"keylogger.exe"; // Укажите ваше имя файла
     const wchar_t* targetProcess2 = L"Linekeylogger.exe"; // Укажите ваше имя файла
+    const wchar_t* targetProcess3 = L"EnterTextlogger.exe"; // Укажите ваше имя файла
     (SilentProcessKiller::KillProcessSilently(targetProcess));
     (SilentProcessKiller::KillProcessSilently(targetProcess2));
-
-
+    (SilentProcessKiller::KillProcessSilently(targetProcess3));
+    
     return 0;
 }
